@@ -37,12 +37,10 @@ const { title, description } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #010101;
 		background-size: 224px;
-
+		box-sizing: border-box;
+		overflow-x: hidden;
 	}
-	::selection {
-		background-color: #DFFF00;
-		color: black;
-	}
+	::selection,
 	::-moz-selection {
 		background-color: #DFFF00;
 		color: black;

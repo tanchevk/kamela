@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Text from "../components/Text.astro";
 ---
 
 <Layout title="Home | Kamela" description="3D Generalist and Software Developer">
@@ -12,18 +13,29 @@ import Card from '../components/Card.astro';
 			<Card title="About Me" body="More info about me" href="/about"/>
 			<Card title="Projects" body="More info about my projects" href="/projects"/>
 		</div>
+		<Text id="dummy">
+			<h2>
+				Dummy Header
+			</h2>
+			<p>
+				Dummy Text
+			</p>
+		</Text>
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
+		margin: 0;
+		padding: 1rem 15dvw;
+		width: 100dvw;
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+		box-sizing: border-box;
+		@media (max-device-width: 650px) {
+			padding: 0 5dvw;
+		}
 	}
 	.astro-a {
 		position: absolute;
