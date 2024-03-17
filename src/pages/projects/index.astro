@@ -1,15 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Text from "../components/Text.astro";
-import CardGrid from "../components/CardGrid.astro";
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+import CardGrid from "../../components/CardGrid.astro";
+import Text from "../../components/Text.astro";
 ---
 
 <Layout title="Home | Kamela" description="3D Generalist and Software Developer /// Kamela">
 	<main>
-		<h1 class="header">Kamela</h1>
+		<h1 class="header">Projects</h1>
+
 		<CardGrid>
-			<Card title="About Me" body="More info about me" href="/about"/>
+			<Card title="Abyssal" body="My Minecraft mod Abyssal" href="https://github.com/Theboiboi8/abyssal" target="_blank"/>
 			<Card title="Projects" body="More info about my projects" href="/projects"/>
 		</CardGrid>
 	</main>

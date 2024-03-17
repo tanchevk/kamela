@@ -5,42 +5,48 @@
 	<a href="/">
 		<img src="/favicon.svg" alt="Kamela Logo"/>
 	</a>
-	<h2><a href="https://github.com/Theboiboi8">GitHub</a></h2>
+	<h2><a href="https://github.com/Theboiboi8" target="_blank">GitHub</a></h2>
 </div>
 <style is:global>
-	.navbar {
+	.titlebar {
+		box-sizing: border-box;
 		position: fixed;
+		will-change: scroll-position;
 		display: flex;
 		flex-direction: row;
 		//flex-wrap: nowrap;
 		justify-content: space-between;
 		align-items: center;
 		max-height: 4rem;
+		padding-left: 15dvw;
+		padding-right: 15dvw;
 		width: 100dvw;
 		height: 4rem;
-		background: linear-gradient(
+		/*background: linear-gradient(
 				rgba(var(--accent-dark), 11%),
 				rgba(var(--accent-dark), 22%)
-		);
+		);*/
 		backdrop-filter: blur(.5rem);
-		border-bottom: .1rem solid rgba(var(--accent), 66%);
+		//border-bottom: .1rem solid rgba(var(--accent), 66%);
 		z-index: 100;
 
 		@media (max-device-width: 650px) {
 			//flex-wrap: wrap;
 		}
 	}
-	.navbar * {
+	.titlebar * {
 		max-height: 4rem;
 		max-width: 50dvw;
 		@media (max-device-width: 650px) {
 			//flex-basis: 100%;
 		}
+		text-decoration: none;
+		color: white;
 	}
-	.navbar a:has(img) {
+	.titlebar a:has(img) {
 		display: contents;
 	}
-	.navbar h2 {
+	.titlebar h2 {
 		padding-right: 1rem;
 	}
 </style>

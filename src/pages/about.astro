@@ -6,9 +6,7 @@ import Text from "../components/Text.astro";
 
 <Layout title="About | Kamela" description="About me /// Kamela">
 	<main>
-		<h1 class="header">
-			About Me
-		</h1>
+		<h1 class="header">About Me</h1>
 		<!--<div class="link-card-grid">
 			<Card title="About Me" body="More info about me" href="/about"/>
 			<Card title="Projects" body="More info about my projects" href="/projects"/>
@@ -17,46 +15,11 @@ import Text from "../components/Text.astro";
 			<h2>
 				Hello!
 			</h2>
-			<p>
-				My name is Kamela, and I'm a 3D Generalist and Software Developer
+			<p>My name is <a href="/">Kamela</a> and I'm a 3D Generalist, VFX Generalist and Software Developer.
+				I mainly develop in Java, Rust, Kotlin and HTML / CSS, and I mainly make Minecraft mods.
+				Some of my projects can be found <a href="/projects">here</a>, and you can view all of my public projects on <a href="https://github.com/Theboiboi8" target="_blank">my GitHub page</a>.
 			</p>
 		</Text>
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
 	</main>
 </Layout>
 
@@ -72,6 +35,8 @@ import Text from "../components/Text.astro";
 		@media (max-device-width: 650px) {
 			padding: 0 5dvw;
 		}
+		min-height: 100dvh;
+		min-width: 100dvw;
 	}
 	.astro-a {
 		position: absolute;
@@ -89,22 +54,9 @@ import Text from "../components/Text.astro";
 		text-align: center;
 		margin-bottom: 1em;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0;
-	}
 	.header {
 		font-size: 5em;
 		font-weight: 900;
 		padding-top: 4rem;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
 	}
 </style>
