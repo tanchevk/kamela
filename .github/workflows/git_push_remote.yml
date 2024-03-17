@@ -23,6 +23,8 @@ jobs:
     name: Push
     runs-on: ubuntu-latest
     steps:
+    - name: "Initialize Git"
+      run: "git init"
     - name: "Add Remote"
       run: "git remote add origin \"https://github.com/Theboiboi8/kamela.git\""
     - name: "Set Branch" 
