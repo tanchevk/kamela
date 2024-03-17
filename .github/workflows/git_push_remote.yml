@@ -30,7 +30,7 @@ jobs:
     - name: "Set User Name"
       run: "git config user.name \"Theboiboi8\""
     - name: "Stage Files"
-      run: "git add"
+      run: "git add ."
     - name: "Commit Changes"
       run: "git commit -m \"Sync with private repo\""
     - name: "Add Remote"
