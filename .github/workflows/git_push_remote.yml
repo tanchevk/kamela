@@ -32,7 +32,7 @@ jobs:
     - name: "LS"
       run: "ls"
     - name: "Stage Files"
-      run: "git add -A"
+      run: "git add --all --force"
     - name: "Sanity Check"
       run: "git status"
     - name: "Commit Changes"
