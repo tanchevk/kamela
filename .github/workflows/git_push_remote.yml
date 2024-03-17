@@ -25,6 +25,8 @@ jobs:
     steps:
     - name: "Initialize Git"
       run: "git init"
+    - name: "Commit Changes"
+      run: "git commit -m \"Sync with private repo\""
     - name: "Add Remote"
       run: "git remote add origin \"https://github.com/Theboiboi8/kamela.git\""
     - name: "Set Branch" 
