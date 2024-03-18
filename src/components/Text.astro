@@ -20,7 +20,9 @@ const { id } = Astro.props;
 		}
 	}
 	.text p {
-
+		@media (max-device-width: 650px) {
+			line-height: 125%;
+		}
 	}
 	.text h2 {
 		white-space: normal;
