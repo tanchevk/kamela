@@ -11,7 +11,9 @@ const { id } = Astro.props;
 </div>
 <style is:global>
 	.text {
+		box-sizing: border-box;
 		width: 100%;
+		max-width: 100dvw;
 		@media (max-device-width: 650px) {
 			padding-left: 1em;
 			padding-right: 1em;
