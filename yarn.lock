@@ -1035,7 +1035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/analytics@npm:^1.0.2":
+"@vercel/analytics@npm:^1.0.2, @vercel/analytics@npm:^1.2.2":
   version: 1.2.2
   resolution: "@vercel/analytics@npm:1.2.2"
   dependencies:
@@ -1375,6 +1375,7 @@ __metadata:
     "@astrojs/check": "npm:^0.5.6"
     "@astrojs/cloudflare": "npm:^9.1.0"
     "@astrojs/vercel": "npm:^7.3.6"
+    "@vercel/analytics": "npm:^1.2.2"
     astro: "npm:^4.4.11"
     typescript: "npm:^5.3.3"
   languageName: unknown
