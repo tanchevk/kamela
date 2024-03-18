@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="GitHub Action">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="GitHub Action" />
+              <option name="relativePathToSchema" value="https://json.schemastore.org/github-action.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value=".github/workflows/qodana.yaml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="GitHub Action (Bundled)">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="GitHub Action (Bundled)" />
+              <option name="relativePathToSchema" value="jar://$APPLICATION_HOME_DIR$/plugins/vcs-github/lib/vcs-github.jar!/schemas/github-action.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value=".github/workflows/qodana.yml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>
