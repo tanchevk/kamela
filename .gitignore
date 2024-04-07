@@ -21,6 +21,6 @@ pnpm-debug.log*
 .DS_Store
 
 # local files
-.yarn
-.idea
-.vscode
+.yarn/
+.idea/
+.vscode/
