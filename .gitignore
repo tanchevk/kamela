@@ -24,3 +24,4 @@ pnpm-debug.log*
 .yarn/
 .idea/
 .vscode/
+.yarn/install-state.gz
