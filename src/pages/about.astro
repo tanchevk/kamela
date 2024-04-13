@@ -6,10 +6,7 @@ import Text from "../components/Text.astro";
 <Layout title="About | Kamela" description="About me /// Kamela">
 	<main>
 		<h1 class="header">About Me</h1>
-		<!--<div class="link-card-grid">
-			<Card title="About Me" body="More info about me" href="/about"/>
-			<Card title="Projects" body="More info about my projects" href="/projects"/>
-		</div>-->
+
 		<Text id="about">
 			<h2>Hello!
 			</h2>
@@ -22,45 +19,3 @@ import Text from "../components/Text.astro";
 		</Text>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: 0;
-		padding: 1rem 15dvw;
-		width: 100dvw;
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-		box-sizing: border-box;
-		@media (max-device-width: 650px) {
-			padding: 0 5dvw;
-		}
-		min-height: 100dvh;
-		min-width: 100dvw;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.header {
-		font-size: 5em;
-		font-weight: 900;
-		padding-top: 4rem;
-
-		@media (max-device-width: 650px) {
-			font-size: 3rem;
-		}
-	}
-</style>

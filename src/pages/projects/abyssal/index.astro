@@ -1,0 +1,55 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Text from "../../../components/Text.astro";
+---
+
+<Layout title="Home | Kamela" description="3D Generalist and Software Developer /// Kamela">
+	<main>
+		<h1 class="header">Abyssal</h1>
+
+		<Text id="about">
+			<h2>About
+			</h2>
+			<p>Abyssal is a 1.20.2 Minecraft mod that adds a new dimension, <span class="highlight">The Abyss</span>
+			</p>
+		</Text>
+	</main>
+</Layout>
+
+<style>
+	.highlight {
+		--dark: #003554;
+		--middle: #006494;
+		--light: #0582CA;
+
+		animation: background-pan 3s linear infinite;
+		background: linear-gradient(
+				to right,
+				var(--dark),
+				var(--middle),
+				var(--light),
+				var(--dark)
+		);
+		background-size: 200%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 700;
+	}
+	.highlight::selection,
+	.highlight::-moz-selection {
+		animation: none;
+		background-clip: border-box;
+		-webkit-background-clip: border-box;
+		-webkit-text-fill-color: #010101;
+	}
+
+	@keyframes background-pan {
+		from {
+			background-position: 0 center;
+		}
+
+		to {
+			background-position: -200% center;
+		}
+	}
+</style>

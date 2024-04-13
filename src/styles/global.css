@@ -1,0 +1,84 @@
+:root {
+	--accent: 223, 255, 0;
+	--accent-light: 245, 255, 177;
+	--accent-dark: 111, 128, 0;
+	--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-dark)) 30%,
+			white 60%
+	);
+}
+
+html,
+body {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	background: #010101;
+	background-size: 224px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	margin: 0;
+	white-space: pre-line;
+}
+
+::selection,
+::-moz-selection {
+	background-color: rgb(var(--accent));
+	color: black;
+}
+
+main {
+	margin: 0;
+	padding: 1rem 15dvw;
+	width: 100dvw;
+	color: white;
+	font-size: 20px;
+	line-height: 1.6;
+	box-sizing: border-box;
+	@media (max-device-width: 650px) {
+		padding: 0 5dvw;
+	}
+	min-height: 100dvh;
+	min-width: 100dvw;
+}
+
+h1 {
+	font-family: "Anybody", "Inter", sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+a {
+	color: white;
+	text-decoration-color: rgb(var(--accent));
+	text-decoration-thickness: .1rem;
+	transition: all 100ms cubic-bezier(0.22, 1, 0.36, 1);
+	border-radius: 3px;
+	font-weight: 500;
+}
+a:hover,
+a:focus {
+	color: rgb(var(--accent));
+	text-decoration-thickness: .2rem;
+}
+
+:focus,
+:focus-visible {
+	outline: 5px solid rgb(var(--accent));
+	outline-offset: 10px;
+}
+
+.header {
+	font-size: 5em;
+	font-weight: 900;
+	padding-top: 4rem;
+
+	@media (max-device-width: 650px) {
+		font-size: 3rem;
+	}
+}
