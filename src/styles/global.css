@@ -23,8 +23,7 @@ body {
 	white-space: pre-line;
 }
 
-::selection,
-::-moz-selection {
+::selection {
 	background-color: rgb(var(--accent));
 	color: black;
 }
