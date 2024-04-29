@@ -8,8 +8,12 @@ interface Props {
 
 let { href, title, body, target } = Astro.props;
 
-if (target == null) {
-	target = "_self"
+let arrow = '';
+
+if (target == "_self") {
+	arrow = '&rarr;';
+} else {
+	arrow = '&UpperRightArrow;';
 }
 ---
 
@@ -17,7 +21,7 @@ if (target == null) {
 	<a href={href} target={target}>
 		<h2>
 			{title}
-			<span>&rarr;</span>
+			<span>{arrow}</span>
 		</h2>
 		<p>
 			{body}
