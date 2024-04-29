@@ -53,8 +53,8 @@ const { title, description} = Astro.props;
   	colorSchemeQueryList.addEventListener('change', setColorScheme);
 
   	if (isDarkMode) {
-		document.querySelector("link[rel*='icon']").setAttribute('href','favicon.svg');
+		document.querySelector("link[rel*='icon']")!.setAttribute('href','favicon.svg');
   	} else {
-		document.querySelector("link[rel*='icon']").setAttribute('href','favicon_light.svg');
+		document.querySelector("link[rel*='icon']")!.setAttribute('href','favicon_light.svg');
   	}
 </script>
