@@ -34,3 +34,27 @@ const { title, description} = Astro.props;
 <style is:global>
 	@import "../styles/global.css";
 </style>
+
+<script>
+	const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+  
+  	let isDarkMode = false;
+  	const setColorScheme = (e: any) => {
+		if (e.matches) {
+	  		// Dark
+	  		isDarkMode = true;
+		} else {
+	  		// Light
+	  		isDarkMode = false;
+		}
+  	}
+
+  	setColorScheme(colorSchemeQueryList);
+  	colorSchemeQueryList.addEventListener('change', setColorScheme);
+
+  	if (isDarkMode) {
+		document.querySelector("link[rel*='icon']").setAttribute('href','favicon.svg');
+  	} else {
+		document.querySelector("link[rel*='icon']").setAttribute('href','favicon_light.svg');
+  	}
+</script>
