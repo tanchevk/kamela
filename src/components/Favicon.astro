@@ -3,7 +3,7 @@ const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
   
 let isDarkMode = false;
 
-const setColorScheme = e => {
+const setColorScheme = (e: any) => {
   if (e.matches) {
     // Dark
     isDarkMode = true;
