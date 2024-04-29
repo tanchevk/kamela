@@ -1,6 +1,6 @@
 ---
-import Favicon from "../components/Favicon.astro";
-import Navbar from "../components/Navbar.astro";
+import Navbar from '../components/Navbar.astro';
+
 interface Props {
 	title: string;
 	description: string;
@@ -15,7 +15,7 @@ const { title, description} = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description}/>
 		<meta name="viewport" content="width=device-width" />
-		<Favicon />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
