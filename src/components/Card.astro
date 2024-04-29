@@ -11,9 +11,11 @@ let { href, title, body, target } = Astro.props;
 let arrow = '';
 
 if (target == "_self") {
-	arrow = '&rarr;';
+	// &rarr;
+	arrow = '→';
 } else {
-	arrow = '&UpperRightArrow;';
+	// &UpperRightArrow;
+	arrow = '↗';
 }
 ---
 
