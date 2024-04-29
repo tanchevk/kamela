@@ -1,0 +1,30 @@
+<script>
+const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+  
+let isDarkMode = false;
+
+const setColorScheme = e => {
+  if (e.matches) {
+    // Dark
+    isDarkMode = true;
+  } else {
+    // Light
+    isDarkMode = false;
+  }
+}
+
+setColorScheme(colorSchemeQueryList);
+colorSchemeQueryList.addEventListener('change', setColorScheme);
+
+let icon_path = '';
+
+if (isDarkMode) {
+    icon_path = '/icon_dark';
+} else {
+    icon_path = '/icon_light';
+}
+</script>
+
+<head>
+    <link rel="icon" type="image/svg+xml" href={icon_path} />
+</head>
