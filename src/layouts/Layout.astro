@@ -43,18 +43,14 @@ const { title, description} = Astro.props;
 		if (e.matches) {
 	  		// Dark
 	  		isDarkMode = true;
+document.querySelector("link[rel*='icon']")!.setAttribute('href','favicon.svg');
 		} else {
 	  		// Light
 	  		isDarkMode = false;
+document.querySelector("link[rel*='icon']")!.setAttribute('href','favicon_light.svg');
 		}
   	}
 
   	setColorScheme(colorSchemeQueryList);
   	colorSchemeQueryList.addEventListener('change', setColorScheme);
-
-  	if (isDarkMode) {
-		document.querySelector("link[rel*='icon']")!.setAttribute('href','favicon.svg');
-  	} else {
-		document.querySelector("link[rel*='icon']")!.setAttribute('href','favicon_light.svg');
-  	}
 </script>
