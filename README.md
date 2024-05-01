@@ -1,2 +1,2 @@
 # kamela
-My homepage, accessible at https://kamela.vercel.app
+My website, accessible at https://kamela.vercel.app
